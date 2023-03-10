@@ -22,3 +22,25 @@ irene_adler = {
 orang = [arsene_lupin, sherlock_holmes, irene_adler]
 
 print(orang)
+
+orang = []
+
+for i in range(3):
+    nama = input(f"Masukkan nama orang ke-{i+1}: ")
+    nik = int(input(f"Masukkan NIK orang ke-{i+1}: "))
+    jenis_kelamin = input(f"Masukkan jenis kelamin orang ke-{i+1} (male/female): ")
+    tanggal_lahir = input(f"Masukkan tanggal lahir orang ke-{i+1} (format: YYYY-MM-DD): ")
+    
+
+    data_orang = {
+        'nama': nama,
+        'nik': nik,
+        'jenis_kelamin': jenis_kelamin,
+        'tanggal_lahir': tanggal_lahir
+    }
+    
+    orang.append(data_orang)
+
+
+print(orang)
+
